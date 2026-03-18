@@ -1,0 +1,33 @@
+{
+  "name": "murphymorph/recipe-manager-backend",
+  "description": "REST API Backend for Recipe Manager - Stores and manages recipes as Markdown files with YAML frontmatter",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Murphy Morph",
+      "email": "dev@murphymorph.dev"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0",
+    "mockery/mockery": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "RecipeManager\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "test:coverage": "phpunit --coverage-html=coverage"
+  }
+}

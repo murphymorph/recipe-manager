@@ -3,25 +3,22 @@
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.0/phpunit.xsd"
          bootstrap="vendor/autoload.php"
          colors="true"
-         verbosity="verbose"
-         failOnRisky="true"
-         failOnWarning="true">
+         displayDetailsOnTestsThatTriggerDeprecations="true"
+         displayDetailsOnTestsThatTriggerErrors="true"
+         displayDetailsOnTestsThatTriggerNotices="true"
+         displayDetailsOnTestsThatTriggerWarnings="true">
     <testsuites>
-        <testsuite name="RecipeManager Test Suite">
-            <directory>./tests</directory>
+        <testsuite name="Recipe Manager Test Suite">
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
+
     <coverage processUncoveredFiles="true">
         <include>
-            <directory suffix=".php">./src</directory>
+            <directory suffix=".php">src</directory>
         </include>
         <exclude>
-            <directory suffix="Test.php">./src</directory>
+            <directory suffix="Test.php">src</directory>
         </exclude>
     </coverage>
-    <php>
-        <ini name="error_reporting" value="-1"/>
-        <ini name="display_errors" value="On"/>
-        <ini name="display_startup_errors" value="On"/>
-    </php>
 </phpunit>

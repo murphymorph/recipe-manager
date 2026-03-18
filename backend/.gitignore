@@ -1,0 +1,28 @@
+# PHP
+/vendor/
+composer.lock
+.env
+.env.local
+
+# PHPUnit
+/coverage/
+.phpunit.result.cache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+backend/recipes/*
+!backend/recipes/.gitkeep
+
+# Logs
+*.log
+error_log
